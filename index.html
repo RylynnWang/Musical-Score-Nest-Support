@@ -16,11 +16,46 @@
   </style>
 </head>
 <body>
-  <h1><span class="app-name">Musical Score Nest</span> 支持</h1>
-  <p>感谢您使用 <strong>Musical Score Nest</strong>！如遇任何问题或需要帮助，请通过以下方式联系我：</p>
-  <p class="contact"><strong>邮箱：</strong> <a href="mailto:wyj11427@163.com">wyj11427@163.com</a></p>
-  <p>我会尽快回复您。</p>
+  <h1><span class="app-name">Musical Score Nest</span> <span data-i18n="title">支持</span></h1>
+  <p data-i18n="description">感谢您使用 <strong>Musical Score Nest</strong>！如遇任何问题或需要帮助，请通过以下方式联系我：</p>
+  <p class="contact"><strong data-i18n="email">邮箱：</strong> <a href="mailto:wyj11427@163.com">wyj11427@163.com</a></p>
+  <p data-i18n="response">我会尽快回复您。</p>
   <hr style="margin: 2rem 0; border: none; border-top: 1px solid #eee;">
-  <p style="font-size: 0.9rem; color: #666;">© 2025 王御嘉 | Musical Score Nest 支持页面</p>
+  <p style="font-size: 0.9rem; color: #666;" data-i18n="footer">© 2025 王御嘉 | Musical Score Nest 支持页面</p>
+
+  <script>
+    const translations = {
+      'zh': {
+        title: '支持',
+        description: '感谢您使用 <strong>Musical Score Nest</strong>！如遇任何问题或需要帮助，请通过以下方式联系我：',
+        email: '邮箱：',
+        response: '我会尽快回复您。',
+        footer: '© 2025 王御嘉 | Musical Score Nest 支持页面'
+      },
+      'en': {
+        title: 'Support',
+        description: 'Thank you for using <strong>Musical Score Nest</strong>! If you have any questions or need help, please contact me:',
+        email: 'Email:',
+        response: 'I will reply as soon as possible.',
+        footer: '© 2025 Wang Yujia | Musical Score Nest Support'
+      }
+    };
+
+    function setLanguage(lang) {
+      const t = translations[lang] || translations['en'];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) {
+          el.innerHTML = t[key];
+        }
+      });
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    }
+
+    // 检测浏览器语言
+    const userLang = navigator.language || navigator.userLanguage;
+    const lang = userLang.startsWith('zh') ? 'zh' : 'en';
+    setLanguage(lang);
+  </script>
 </body>
 </html>

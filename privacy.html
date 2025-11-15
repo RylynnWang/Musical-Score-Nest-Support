@@ -19,41 +19,114 @@
   </style>
 </head>
 <body>
-  <h1><span class="app-name">Musical Score Nest</span> 隐私政策</h1>
-  <p><strong>生效日期：</strong> 2025年11月12日</p>
+  <h1><span class="app-name">Musical Score Nest</span> <span data-i18n="title">隐私政策</span></h1>
+  <p><strong data-i18n="effective-date">生效日期：</strong> 2025年11月12日</p>
 
-  <h2>1. 我们收集的信息</h2>
-  <p><strong>Musical Score Nest 不收集、不存储、不传输任何个人信息。</strong></p>
+  <h2 data-i18n="section1-title">1. 我们收集的信息</h2>
+  <p><strong data-i18n="section1-desc">Musical Score Nest 不收集、不存储、不传输任何个人信息。</strong></p>
   <ul>
-    <li>不要求登录</li>
-    <li>不使用网络连接</li>
-    <li>不收集使用数据、崩溃日志或分析</li>
-    <li>不使用广告、跟踪器或第三方 SDK</li>
+    <li data-i18n="section1-item1">不要求登录</li>
+    <li data-i18n="section1-item2">不使用网络连接</li>
+    <li data-i18n="section1-item3">不收集使用数据、崩溃日志或分析</li>
+    <li data-i18n="section1-item4">不使用广告、跟踪器或第三方 SDK</li>
   </ul>
 
-  <h2>2. 相册访问权限</h2>
-  <p>本应用使用 <code>PHPickerViewController</code> 让您从相册选择乐谱图片：</p>
+  <h2 data-i18n="section2-title">2. 相册访问权限</h2>
+  <p data-i18n="section2-desc">本应用使用 <code>PHPickerViewController</code> 让您从相册选择乐谱图片：</p>
   <ul>
-    <li>仅在您主动选择时访问照片</li>
-    <li>图片仅保存在您的设备本地</li>
-    <li>不会上传到任何服务器</li>
-    <li>不会用于任何其他目的</li>
+    <li data-i18n="section2-item1">仅在您主动选择时访问照片</li>
+    <li data-i18n="section2-item2">图片仅保存在您的设备本地</li>
+    <li data-i18n="section2-item3">不会上传到任何服务器</li>
+    <li data-i18n="section2-item4">不会用于任何其他目的</li>
   </ul>
 
-  <h2>3. 数据安全</h2>
-  <p>由于不收集任何数据，因此不存在数据泄露风险。所有操作均在您的设备上完成。</p>
+  <h2 data-i18n="section3-title">3. 数据安全</h2>
+  <p data-i18n="section3-desc">由于不收集任何数据，因此不存在数据泄露风险。所有操作均在您的设备上完成。</p>
 
-  <h2>4. 儿童隐私</h2>
-  <p>本应用不专门面向儿童，也不收集任何儿童数据。所有用户均可安全使用。</p>
+  <h2 data-i18n="section4-title">4. 儿童隐私</h2>
+  <p data-i18n="section4-desc">本应用不专门面向儿童，也不收集任何儿童数据。所有用户均可安全使用。</p>
 
-  <h2>5. 政策更新</h2>
-  <p>如有更新，我们将在 App Store 更新说明中通知您。</p>
+  <h2 data-i18n="section5-title">5. 政策更新</h2>
+  <p data-i18n="section5-desc">如有更新，我们将在 App Store 更新说明中通知您。</p>
 
-  <h2>6. 联系我们</h2>
-  <p>如对隐私有疑问，请发送邮件至：</p>
-  <p style="font-size: 1.1rem;"><strong>Email：</strong> <a href="mailto:wyj11427@163.com">wyj11427@163.com</a></p>
+  <h2 data-i18n="section6-title">6. 联系我们</h2>
+  <p data-i18n="section6-desc">如对隐私有疑问，请发送邮件至：</p>
+  <p style="font-size: 1.1rem;"><strong data-i18n="email-label">Email：</strong> <a href="mailto:wyj11427@163.com">wyj11427@163.com</a></p>
 
   <hr>
-  <p class="footer">© 2025 王御嘉 | Musical Score Nest 隐私政策</p>
+  <p class="footer" data-i18n="footer">© 2025 王御嘉 | Musical Score Nest 隐私政策</p>
+
+  <script>
+    const translations = {
+      'zh': {
+        title: '隐私政策',
+        'effective-date': '生效日期：',
+        'section1-title': '1. 我们收集的信息',
+        'section1-desc': 'Musical Score Nest 不收集、不存储、不传输任何个人信息。',
+        'section1-item1': '不要求登录',
+        'section1-item2': '不使用网络连接',
+        'section1-item3': '不收集使用数据、崩溃日志或分析',
+        'section1-item4': '不使用广告、跟踪器或第三方 SDK',
+        'section2-title': '2. 相册访问权限',
+        'section2-desc': '本应用使用 <code>PHPickerViewController</code> 让您从相册选择乐谱图片：',
+        'section2-item1': '仅在您主动选择时访问照片',
+        'section2-item2': '图片仅保存在您的设备本地',
+        'section2-item3': '不会上传到任何服务器',
+        'section2-item4': '不会用于任何其他目的',
+        'section3-title': '3. 数据安全',
+        'section3-desc': '由于不收集任何数据，因此不存在数据泄露风险。所有操作均在您的设备上完成。',
+        'section4-title': '4. 儿童隐私',
+        'section4-desc': '本应用不专门面向儿童，也不收集任何儿童数据。所有用户均可安全使用。',
+        'section5-title': '5. 政策更新',
+        'section5-desc': '如有更新，我们将在 App Store 更新说明中通知您。',
+        'section6-title': '6. 联系我们',
+        'section6-desc': '如对隐私有疑问，请发送邮件至：',
+        'email-label': 'Email：',
+        footer: '© 2025 王御嘉 | Musical Score Nest 隐私政策'
+      },
+      'en': {
+        title: 'Privacy Policy',
+        'effective-date': 'Effective Date:',
+        'section1-title': '1. Information We Collect',
+        'section1-desc': 'Musical Score Nest does not collect, store, or transmit any personal information.',
+        'section1-item1': 'No login required',
+        'section1-item2': 'No network connection used',
+        'section1-item3': 'No usage data, crash logs, or analytics collected',
+        'section1-item4': 'No ads, trackers, or third-party SDKs',
+        'section2-title': '2. Photo Library Access',
+        'section2-desc': 'This app uses <code>PHPickerViewController</code> to let you select music score images from your photo library:',
+        'section2-item1': 'Photos are accessed only when you actively select them',
+        'section2-item2': 'Images are saved locally on your device only',
+        'section2-item3': 'No uploads to any server',
+        'section2-item4': 'Not used for any other purposes',
+        'section3-title': '3. Data Security',
+        'section3-desc': 'Since no data is collected, there is no risk of data breach. All operations are completed on your device.',
+        'section4-title': '4. Children\'s Privacy',
+        'section4-desc': 'This app is not specifically targeted at children and does not collect any children\'s data. It is safe for all users.',
+        'section5-title': '5. Policy Updates',
+        'section5-desc': 'If there are any updates, we will notify you in the App Store update notes.',
+        'section6-title': '6. Contact Us',
+        'section6-desc': 'If you have any privacy concerns, please send an email to:',
+        'email-label': 'Email:',
+        footer: '© 2025 Wang Yujia | Musical Score Nest Privacy Policy'
+      }
+    };
+
+    function setLanguage(lang) {
+      const t = translations[lang] || translations['en'];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) {
+          el.innerHTML = t[key];
+        }
+      });
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    }
+
+    // 检测浏览器语言
+    const userLang = navigator.language || navigator.userLanguage;
+    const lang = userLang.startsWith('zh') ? 'zh' : 'en';
+    setLanguage(lang);
+  </script>
 </body>
 </html>
